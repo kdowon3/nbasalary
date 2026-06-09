@@ -5,9 +5,16 @@ from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env'))
 
 import anthropic
+import streamlit as st
 from tools import get_player_stats, predict_salary
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+def _get_api_key():
+    try:
+        return st.secrets["ANTHROPIC_API_KEY"]
+    except:
+        return os.environ.get("ANTHROPIC_API_KEY")
+
+client = anthropic.Anthropic(api_key=_get_api_key())
 
 TOOLS = [
     {
