@@ -38,14 +38,9 @@ POS_MAP = {
 POS_ENCODE = {'C': 0, 'PF': 1, 'PG': 2, 'SF': 3, 'SG': 4}
 
 FEATURES = [
-    'Age', 'G', 'MP',
-    'PTS_per_MP', 'TRB_per_MP', 'AST_per_MP',
-    'AST_TOV', 'STL_BLK', 'value_composite',
-    'FG%', '3P%', 'FT%', 'eFG%',
-    'ORB', 'DRB', 'PF',
-    'pos_encoded', 'Year',
-    'GS_rate', '3PA_rate', 'scoring_eff', 'usage_proxy',
-    'prime_age', 'experience', 'PTS_vs_avg', 'PTS_growth',
+    'value_composite', 'experience', 'GS_rate', 'Age',
+    'PTS_vs_avg', 'PTS_growth', 'usage_proxy', 'MP',
+    'PTS_per_MP', 'Year',
 ]
 
 
