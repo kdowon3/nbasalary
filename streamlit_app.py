@@ -142,6 +142,7 @@ if analyze_btn and player_name:
                 f"{stats['player_name']}의 {stats['season']}시즌을 분석해줘. "
                 f"실제 연봉은 ${actual_salary:,}이고 ML 예측 적정 연봉은 ${result['predicted_salary']:,}이야. "
                 f"판정은 {result['verdict']}이고 ratio는 {result['ratio']}야. "
+                f"판정 기준: ratio > 1.35 먹튀, 0.80~1.35 적정, < 0.80 저평가. 이 기준으로만 설명해줘. "
                 f"스탯: PTS {stats['PTS']}, TRB {stats['TRB']}, AST {stats['AST']}, "
                 f"STL {stats['STL']}, BLK {stats['BLK']}, FG% {stats['FG%']:.3f}, "
                 f"3P% {stats['3P%']:.3f}, 경력 {stats['experience']}년, 나이 {stats['Age']}세. "
