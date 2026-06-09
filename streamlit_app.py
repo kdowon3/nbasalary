@@ -119,7 +119,7 @@ if analyze_btn and player_name:
         c3.metric("Ratio", f"{result['ratio']:.3f}")
 
         st.divider()
-        if result['verdict'] == 'Overpaid (먹튀)':
+        if result['verdict'] == 'Overpaid (먹튀)':  # ratio > 1.35
             st.markdown(f"""<div class="verdict-overpaid">
                 <h2 style="color:#e74c3c;margin:0">🔴 먹튀 (Overpaid)</h2>
                 <p style="color:#ccc;margin:6px 0 0">실제 연봉이 적정가의 {result['ratio']:.1%} 수준</p>

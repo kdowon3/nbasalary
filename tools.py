@@ -269,7 +269,7 @@ def predict_salary(stats: dict, actual_salary: int = None) -> dict:
 
     if actual_salary:
         ratio = actual_salary / predicted_salary
-        if ratio > 1.30:
+        if ratio > 1.35:
             verdict = 'Overpaid (먹튀)'
             color = 'red'
         elif ratio < 0.80:
