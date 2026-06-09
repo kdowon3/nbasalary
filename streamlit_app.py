@@ -36,7 +36,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("🏀 NBA Player Value Analyzer")
-st.caption("선수 스탯 기반 연봉 가치 분석 시스템 | Random Forest + Claude AI")
+st.caption("선수 스탯 기반 연봉 가치 분석 시스템")
 st.divider()
 
 col1, col2 = st.columns([2, 1])
