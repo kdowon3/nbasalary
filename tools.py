@@ -248,7 +248,7 @@ def predict_salary(stats: dict, actual_salary: int = None) -> dict:
     model  = joblib.load(os.path.join(BASE_DIR, 'model', 'salary_model.pkl'))
     scaler = joblib.load(os.path.join(BASE_DIR, 'model', 'scaler.pkl'))
 
-    X = pd.DataFrame([[stats[f] for f in FEATURES]], columns=FEATURES)
+    X = np.array([[stats[f] for f in FEATURES]])
     X_scaled = scaler.transform(X)
     salary_pct = float(model.predict(X_scaled)[0])
 
